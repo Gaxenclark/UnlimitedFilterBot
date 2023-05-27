@@ -13,22 +13,22 @@ def LOGGER(name: str) -> Logger:
 if bool(environ.get("WEBHOOK", False)):
 
     try:
-        API_ID = int(environ.get("API_ID", 1234))
+        API_ID = int(environ.get("API_ID", 25242804))
     except Exception as e:
         print(f"API_ID Invalid: \n\nLogs: {e}")
 
     try:
-        API_HASH = environ.get("API_HASH", "")
+        API_HASH = environ.get("API_HASH", "bdc317842f60220121ded0a2fcdc0727")
     except Exception as e:
         print(f"API_HASH Invalid: \n\nLogs: {e}")
 
     try:
-        BOT_TOKEN = environ.get("BOT_TOKEN", "")
+        BOT_TOKEN = environ.get("BOT_TOKEN", "6212399137:AAG59qqOLn306rydBPF9pR8w7qeEX4UozgI")
     except Exception as e:
         print(f"BOT_TOKEN Invalid: \n\nLogs: {e}")
 
     try:
-        DATABASE_URI = environ.get("DATABASE_URI", "")
+        DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://gdc846017:blackpanther00@cluster0.zpakafu.mongodb.net/?retryWrites=true&w=majority")
     except Exception as e:
         print(f"DATABASE_URI Invalid: \n\nLogs: {e}")
 
@@ -38,7 +38,7 @@ if bool(environ.get("WEBHOOK", False)):
         print(f"DATABASE_NAME Invalid: \n\nLogs: {e}")
 
     try:
-        ADMINS = set(str(x) for x in environ.get("ADMINS", "").split())
+        ADMINS = set(str(x) for x in environ.get("ADMINS", "6046028054").split())
     except Exception as e:
         print(f"ADMINS Invalid: \n\nLogs: {e}")
 
@@ -56,9 +56,9 @@ if bool(environ.get("WEBHOOK", False)):
 
     BOT_PICS = (environ.get('BOT_PICS', "motech")).split()
 
-    FORCE_SUB = environ.get("UPDATE_CHANNEL", "")
+    FORCE_SUB = environ.get("UPDATE_CHANNEL", "t.me/TooAdultsVideos")
 
-    SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "MoTechGroup")
+    SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "TooAdultsVideos")
 
     START_TXT = environ.get("START_TXT", StartTxT)
 
@@ -68,7 +68,7 @@ if bool(environ.get("WEBHOOK", False)):
 
     AUTO_DELETE = bool(environ.get("AUTO_DELETE", True))
 
-    AUTO_DELETE_SECOND = int(environ.get("AUTO_DELETE_SECOND", 300))
+    AUTO_DELETE_SECOND = int(environ.get("AUTO_DELETE_SECOND", 30))
 
     PORT = environ.get('PORT', '8080')
 
